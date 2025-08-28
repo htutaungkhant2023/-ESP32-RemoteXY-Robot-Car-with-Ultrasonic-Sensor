@@ -1,3 +1,5 @@
+🚗 ESP32 RemoteXY Robot Car with Ultrasonic Sensor
+
 Project Overview (English)
 This project is a Bluetooth-controlled robot car built with ESP32, L298N motor driver, and HC-SR04 ultrasonic sensor.
 The control interface is created using the RemoteXY mobile app, which allows you to drive the car via a joystick and monitor the distance detected by the ultrasonic sensor in real time.
@@ -32,6 +34,11 @@ Power on the robot and connect from the app via BLE (RemoteXY device).
 Use the joystick to control movement and monitor distance value.
 
 -----------
+
+![480658894_1341516586868134_5550177618425314348_n](https://github.com/user-attachments/assets/2c5c89c7-e9fe-4c14-8bf7-ac85c9c1130e)
+
+
+----------
 
 📖 プロジェクト概要 (日本語)
 このプロジェクトは、ESP32、L298Nモータードライバ、HC-SR04超音波センサーを使用した
