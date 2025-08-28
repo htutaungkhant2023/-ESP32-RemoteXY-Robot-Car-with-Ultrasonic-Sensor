@@ -1,40 +1,34 @@
-🚗 ESP32 RemoteXY Robot Car with Ultrasonic Sensor
-
-Project Overview (English)
-This project is a Bluetooth-controlled robot car built with ESP32, L298N motor driver, and HC-SR04 ultrasonic sensor.
-The control interface is created using the RemoteXY mobile app, which allows you to drive the car via a joystick and monitor the distance detected by the ultrasonic sensor in real time.
----
-🔹 Features
-RemoteXY BLE control (joystick + switch)
-Forward / Backward / Left / Right movement
-Ultrasonic distance measurement (displayed in app + Serial Monitor)
-Safety stop when obstacle is too close (optional)
---
-🔹 Hardware Used
-ESP32 (ESP32-C3 or ESP32-WROOM supported)
-L298N Motor Driver Module
-DC Motors (x2)
+🚙 ESP32-C3 RemoteXY Robot Car
+📌 Overview
+This project uses ESP32-C3, L298N Motor Driver, and HC-SR04 Ultrasonic Sensor
+to build a robot car that can be controlled via the RemoteXY mobile app (BLE).
+You can drive it forward, backward, left, and right using the joystick,
+and the ultrasonic sensor measures the distance in real time.
+🔧 Hardware Requirements
+ESP32-C3 Mini
+L298N Motor Driver
+DC Motors (x2 or x4)
 HC-SR04 Ultrasonic Sensor
-Power supply (Battery pack)
---
-🔹 Pin Connections
-Component	ESP32 Pin
-IN1 (L298N)	GPIO14
-IN2 (L298N)	GPIO27
-IN3 (L298N)	GPIO26
-IN4 (L298N)	GPIO25
-TRIG (HC-SR04)	GPIO12
-ECHO (HC-SR04)	GPIO13
---
-🔹 How to Use
-Install RemoteXY app on your smartphone (iOS/Android).
-Open the provided .rxy configuration or use the built-in BLE interface.
-Upload the Arduino code to ESP32 using Arduino IDE.
-Power on the robot and connect from the app via BLE (RemoteXY device).
-Use the joystick to control movement and monitor distance value.
-
------------
-
+Battery (Li-ion / Li-Po)
+RemoteXY App (Android / iOS)
+💻 Software Requirements
+Arduino IDE (with ESP32 board support)
+Libraries:
+RemoteXY
+BLEDevice (for ESP32 BLE)
+🎮 Controls
+Joystick (RemoteXY app)
+Forward: Joystick ↑
+Backward: Joystick ↓
+Turn Left: Joystick ←
+Turn Right: Joystick →
+Stop: Center position
+The ultrasonic distance value is displayed in the RemoteXY app.
+📂 Project Structure
+robot-car/
+│── robot_car.ino   # Main control code
+│── README.md
+🖼️ Demo
 ![480658894_1341516586868134_5550177618425314348_n](https://github.com/user-attachments/assets/2c5c89c7-e9fe-4c14-8bf7-ac85c9c1130e)
 
 
