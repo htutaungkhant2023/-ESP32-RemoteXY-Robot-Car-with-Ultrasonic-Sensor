@@ -1,6 +1,7 @@
 Project Overview (English)
 This project is a Bluetooth-controlled robot car built with ESP32, L298N motor driver, and HC-SR04 ultrasonic sensor.
 The control interface is created using the RemoteXY mobile app, which allows you to drive the car via a joystick and monitor the distance detected by the ultrasonic sensor in real time.
+---
 🔹 Features
 RemoteXY BLE control (joystick + switch)
 Forward / Backward / Left / Right movement
